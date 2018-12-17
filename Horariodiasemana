@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title> HORARIO CON CSS </title>
+		<meta  chartset="UTF-8">
+		<link rel="stylesheet" href="estilo.css">
+		<script>
+			function fecha(){
+				var hoy = new Date();
+				var dia = hoy.getDay();
+				document.getElementById(dia).style.borderColor = '#FF0000';
+				document.getElementById(dia).style.backgroundColor = '#FFFFFF';
+				document.getElementById(dia).style.color = '#FF0000';
+			}
+		</script>
+	</head>
+	<body onload="fecha()">
+	<p> 2ºBACH B </p>
+		<table style="margin:  auto">
+			<tr class="dias">
+				<td id="1">Lunes</td>
+				<td id="2">Martes </td>
+				<td id="3">Miercoles </td>
+				<td id="4">Jueves</td>
+				<td id="5">Viernes</td>
+			</tr>
+			<tr>
+				<td id="1" class="Fisica"> Física</td>
+				<td id="2" class="Mate"> Matemáticas</td>
+				<td id="3" class="Lengua"> Lengua</td>
+				<td id="4" class="Mate">Matemáticas</td>
+				<td id="5" class="TI">TI</td>
+			</tr>
+			<tr>
+				<td id="1" class="TI">TI</td>
+				<td id="2" class="Ingles">Inglés</td>
+				<td id="3" class="TI">TI</td>
+				<td id="4" class="Dibujo">Dibujo</td>
+				<td id="5" class="Ingles">Inglés</td>
+			</tr>
+			<tr>
+				<td id="1" class="Mate">Matemáticas</td>
+				<td id="2" class="Dibujo"> Dibujo</td>
+				<td id="3" class="Dibujo"> Dibujo</td>
+				<td id="4" class="TI">TI</td>
+				<td id="5" class="Física">Física</td>
+			</tr>
+			<tr height= 20>
+				<td  class="recreo" colspan ="5">Recreo</td>
+			</tr>
+			<tr>
+				<td id="1" class="Lengua">Lengua</td>
+				<td id="2" class="Fisica"> Física</td>
+				<td id="3" class="TIC">TIC </td>
+				<td id="4" class="TIC">TIC</td>
+				<td id="5" class="Lengua">Lengua</td>
+			</tr>
+			<tr>
+				<td id="1" class="Historia">Historia</td>
+				<td id="2" class="Historia">Historia</td>
+				<td id="3" class="Historia"> Historia</td>
+				<td id="4" class="Fisica">Física</td>
+				<td id="5" class="TIC">TIC</td>
+			</tr>
+			<tr>
+				<td id="1" class="Ingles" >Inglés</td>
+				<td id="2" class="Lengua">Lengua </td>
+				<td id="3" class="Mate">Matemáticas </td>
+				<td id="4" class="Historia">Historia</td>
+				<td id="5" class="Dibujo">Dibujo</td>
+			</tr>
+		</table>
+	</body>
+</html>
